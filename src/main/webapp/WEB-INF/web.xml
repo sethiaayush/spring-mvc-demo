@@ -9,6 +9,8 @@
 	<servlet>
 		<servlet-name>dispatcher</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<!-- Comes with spring framework -->
+		<!--  provide location of customer dispatcher-servlet.xml -->
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
 			<param-value>/WEB-INF/dispatcher-servlet.xml</param-value>
@@ -16,7 +18,9 @@
 		<load-on-startup>1</load-on-startup>
 	</servlet>
 	<!-- Step 2: Set up URL mapping for Spring MVC Dispatcher Servlet -->
+	
 	<servlet-mapping>
+	<!-- It tells every "/"(url-pattern) to forward request to servlet-name(above) = dispatcher -->
 		<servlet-name>dispatcher</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>

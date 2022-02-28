@@ -9,6 +9,7 @@
 <title>Student-Confirmation</title>
 </head>
 <body>
+<!--  student is very important here-->
 	The Student is confirmed : ${student.firstName} ${student.lastName}
 	<br>
 	<br> Country ${student.country}
@@ -17,6 +18,7 @@
 	<br>
 	<br>Operating Systems:
 	<ul> 
+	<!-- good use of jstl library here, using forEach -->
 		<c:forEach var="operatingSystem" items="${student.operatingSystems}">
 			<li>${operatingSystem}</li>
 		</c:forEach>

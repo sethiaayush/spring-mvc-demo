@@ -1,0 +1,21 @@
+MVC-Model View Controller:-
+WebBrowser->FrontController->(Model)->Controller->(Model)->ViewTemplate->WebBrowser
+Spring way of building web App UI in Java, with pre built features of Spring, and provides flexibility.
+
+Front Controller is DispatcherServlet(Already Developed by Spring)
+Model:- User built, Student class here
+Controller:- User built, XXXController.java
+ViewTemplate:- User built, and in view folder.
+Open
+1. Web.xml->it configures DispatcherServlet location. Look at step 1 and 2.
+2. Open dispatcher-servlet.xml, 
+	look for step-3:- Component Scanning, spring functionality.
+	look for step-4:- Support for conversion, formatting and validation support
+	look for step-5:- Where to look for view files
+	
+3. Deploy and run the server, open http://localhost:8080/spring-mvc-demo/ in web browser.
+   It opens main-menu.jsp, how? It looks for mapping of "/", this is provided in HomeController.java
+4. Open main-menu.jsp, look for anchor <a> tags and further look for requestMapping related to
+	a. showForm (HelloWorldController#showForm), traverse further to action, and open helloworld.jsp
+	b. student/showForm (StudentController#showForm-Look for requestMapping on the class:- 
+	c. customer/showForm
