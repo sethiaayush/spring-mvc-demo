@@ -24,6 +24,7 @@ public class Customer {
 	private String postalCode;
 
 	@CourseCode(value="iot")
+	//read MultipleValidationStringInAnnotation.txt
 	private String courseCode;
 
 	public String getFirstName() {

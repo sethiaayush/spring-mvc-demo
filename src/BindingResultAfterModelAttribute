@@ -14,18 +14,8 @@ Here is the relevant section from the Spring Reference Manual
 
 Defining @RequestMapping methods
 
-
-
-
-
-
-
-
-
 @RequestMapping handler methods have a flexible signature and can choose from a range of supported controller method arguments and return values.
-
 ...
-
 
 The Errors or BindingResult parameters have to follow the model object that is being
 bound immediately ...

@@ -32,6 +32,7 @@ public class CustomerController {
 
 	@RequestMapping("/processForm")
 	public String processForm(@Valid @ModelAttribute("customer") Customer theCustomer, BindingResult theBindingResult) {
+		//Read BindingResultAfterModelAttribute
 		if (theBindingResult.hasErrors()) {
 			return "customer-form";
 		} else {

@@ -1,9 +1,6 @@
 Spring MVC Custom Validation - FAQ: Is it possible to integrate multiple validation string in one annotation?
 
-
-
 Question:
-
 Is it possible to integrate multiple validation string in one annotation? For example, validate against both LUV and TOPS.
 
 Answer:
